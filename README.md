@@ -43,7 +43,7 @@
 - %x : print value with format hexadecimal
 - %o : print value with format octal decimal
 
-- # option means numeral system
+- `# option means numeral system
 - example
 - printf("%d, %#x, %#o", 100, 100, 100); // printed as 100, 0x64, 0144
 
