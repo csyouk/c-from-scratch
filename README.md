@@ -2,11 +2,11 @@
 - c의 기본 문법들을 실습해본다.
 
 ## Special Characters
-- \n : new line
-- \r : carraige return
-- \t : tab
-- \b : back
-- \a : alarm
+- \n : new line (goto next line and move first column)
+- \r : carraige return (goto first column of line)
+- \t : tab (same as space 8)
+- \b : back 
+- \a : alarm 
 - \0 : null (end of string)
 
 - 문자열에서 '\' 표시는 special character의 시작을 알리는 기호이다. 
@@ -23,7 +23,6 @@
 
 - 0x1A ==> 1*16^1 + 10 = 26
 - 16진법 수를 10진법 수로 바꾸었다. 
-
 
 ## Constans
 - 문자열(string)은 double quotation mark(" ") 로 감싼다.
