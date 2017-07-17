@@ -11,6 +11,7 @@
 #define EX13 0
 #define EX14 0
 #define LONGLONG 0
+#define FORMAT_INT_DECIMAL 1
 
 
 
@@ -123,5 +124,13 @@ void main(void){
 void main(void){
 	unsigned long long tera = 1024 * 1024 * 1024 * 1024ll; // 반드시 ll suffix를 붙여줘야 함.
 	printf("%lld", tera); //  %lld 가 format directive 이다.
+}
+#endif
+
+
+#if FORMAT_INT_DECIMAL
+void main(void){
+	printf("%10.2f \n", 123.4567);   // [    123.45]
+	printf("%010.2f \n", 123.4567);  // [0000123.45]
 }
 #endif

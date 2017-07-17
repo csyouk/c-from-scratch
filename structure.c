@@ -25,13 +25,23 @@ void inject_student_data(struct Student *student, char* name, int height, int we
 	student->id = id;
 }
 
-void print_student_data(struct Student student){
+void print_student_data_as_struct_argument(struct Student student){
 	printf("====================================================\n");
 	printf("Student name is : %s \n", student.name);
 	printf("Student height is : %d \n", student.height);
 	printf("Student weight is : %d \n", student.weight);
 	printf("Student phone number is : %llu \n", student.phone_number);
 	printf("Student id is : %d \n", student.id);
+	printf("====================================================\n");
+}
+
+void print_student_data_as_pointer_argument(struct Student *student){
+	printf("====================================================\n");
+	printf("Student name is : %s \n", student->name);
+	printf("Student height is : %d \n", student->height);
+	printf("Student weight is : %d \n", student->weight);
+	printf("Student phone number is : %llu \n", student->phone_number);
+	printf("Student id is : %d \n", student->id);
 	printf("====================================================\n");
 }
 
@@ -46,8 +56,8 @@ void main(void){
 	// 제대로 쓰기 위해서는 struct pointer를 넘겨야 한다. 
 	inject_student_data(&cs, "HSW", 182, 85, 8201000000000ull, 1);
 
-	print_student_data( cs );
-
+	print_student_data_as_struct_argument( cs );
+	print_student_data_as_pointer_argument( &cs );
 }
 
 

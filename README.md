@@ -38,10 +38,15 @@
 - %llu : unsigned long long int
 - %f : float or double
 - %.3f : print number of float or double decimal with precision 3.
-- %10.2f : print integer number with digits 10(if digits are not quallified, filled with 0), and float/double decimal with precision 2.
+- %10.2f : print 10 character with precision 2 (include .)
+- %010.2f : print 10 character with precision 2 (include .)
 - %p : print value of pointer p
 - %x : print value with format hexadecimal
 - %o : print value with format octal decimal
+
+- example
+- printf("%10.2f \n", 123.4567); // [    123.45]
+- printf("%010.2f \n, 123.4567); // [0000123.45]
 
 - \# option means numeral system
 - example
