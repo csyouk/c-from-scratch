@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define DOUBLE_POINTER 0
-#define TRIPLE_POINTER 1
+#define TRIPLE_POINTER 0
 
 #if DOUBLE_POINTER
 void main(void){
@@ -67,5 +67,7 @@ void main(void){
 	printf("\n Value of num using pr2 is: %d", **pr2);
 	printf("\n Value of num using pr3 is: %d", ***pr3);
 	printf("\n");
+
+	printf("Test \\38 is : \38 \n");
 }
 #endif

@@ -10,6 +10,7 @@
 #define EX12 0
 #define EX13 0
 #define EX14 0
+#define LONGLONG 0
 
 
 
@@ -115,5 +116,12 @@ void main(void){
 #if EX14
 void main(void){
 	printf("%.1f \n", 3.14 * 3.0 * 3.0);
+}
+#endif
+
+#if LONGLONG
+void main(void){
+	unsigned long long tera = 1024 * 1024 * 1024 * 1024ll; // 반드시 ll suffix를 붙여줘야 함.
+	printf("%lld", tera); //  %lld 가 format directive 이다.
 }
 #endif
