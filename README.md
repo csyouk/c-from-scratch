@@ -10,6 +10,7 @@
 - \0 : null (end of string)
 
 - 문자열에서 '\' 표시는 special character의 시작을 알리는 기호이다. 
+- special character로 cursor의 위치만 제어한다. 
 
 ## Represent numeral system(진법 표현하기)
 - 10진법의 경우는 일반 정수형으로 쓰면된다.
@@ -61,6 +62,14 @@
 ## Data Type
 - Integer Type : char(1B), short int(2B), long int(4B), long long int(8B)
 - Real number Type : float(4B), long double(8B), 
+
+## Data range for integer
+- int(4B) : -2,147,483,648 ~ 2,147,483,647 (10자리 표현)
+- short int(2B) : -32,768 ~ 32,767 (5자리 표현)
+- signed long int(4B) : -2,147,483,648 ~ 2,147,483,647 (10자리 표현)
+- unsigned long int(4B) : 0 ~ 4,294,967,295 (10자리 표현)
+- signed long long int(8B) : -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807 (19자리 표현)
+- unsigned long long int(8B) : 0 ~ 18,446,744,073,709,551,615 (20자리 표현)
 
 ## Data type suffix
 - unsigned int : 100u, 100U

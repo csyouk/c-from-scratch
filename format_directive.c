@@ -11,7 +11,7 @@
 #define EX13 0
 #define EX14 0
 #define LONGLONG 0
-#define FORMAT_INT_DECIMAL 1
+#define FORMAT_INT_DECIMAL 0
 
 
 

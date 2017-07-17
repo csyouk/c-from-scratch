@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ADDRESS 1
+#define ADDRESS 0
 
 #if ADDRESS
 void inject_student_data();
