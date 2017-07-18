@@ -138,25 +138,46 @@ example
 **Binary operator**  
 
 example
+
 - a+b, a-b
 
 **Compound assignment operator**
 
-- 변수 초기화에 조심해야 한다.
+- 변수 초기화에 조심.
 - 복합연산자는 연산의 횟수를 줄여준다.
-- 복합연산자에서는 우변의 항의 연산이 우선이다.
-- \-=  +=  /=  *= 
+- 복합연산자에서 우변의 연산이 우선이다.
+- \-=,  +=,  /=,  *= 
 - 연산자는 우선순위가 있다.
+
 ![operator precedence](http://4.bp.blogspot.com/-RTANrXQEtaI/Ty0UX_BdlxI/AAAAAAAAABM/1t8EBkHEARo/s1600/untitled_thumb.png)
 
 example  
-- a /= a - b + 1;
-- a %= b -= 3;
 
+- a /= a \- b + 1;  
+- a %= b \-= 3;
 
+**Prefix / Postfix Operators**
 
+- Prefix operator : 전치 연산자. 연산자가 우선적으로 계산된다.
+- Postfix operator : 후치 연산자. 연산자가 가장 나중에 적용된다. 
+- 연산의 종료의 기준은 **;** 표시이다. 
 
+example
 
+- b = a++ + 10; // 모든 연산자(=, +)가 평가된 후, **;** 를 벗어나면 ++ 연산자가 적용됨.
+- b = ++a + 10; // ++ 연산자가 먼저 평가 된 후, 나머지 연산자가 평가됨. 
+- if(a++){};    // 후치연산자 ++은 if의 ( )를 벗어난 후, 값이 평가된다.
+
+example
+
+<pre>
+<code>
+int a=1, b=2, c=3;
+a = -3*-4%+6/5;   // ==> a = ((((-3)*(-4))%(+6))/5);
+a += b - c *= 2;  // ==> a += (b - c) *= 2; ==> a += -1 *= 2; // l-value error
+a += b -= c *= 2; // ==>
+</code>
+</pre>
 
 
 

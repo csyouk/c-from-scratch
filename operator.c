@@ -6,7 +6,9 @@
 #define EX31 0
 #define EX32 0
 #define EX33 0
-#define EX34 1
+#define EX34 0
+#define EX36 0
+#define EX36m1 1
 
 #if ENABLE
 void main(void){
@@ -71,6 +73,40 @@ void main(void){
 	a = a * (b + 2);      printf("%d\n", a);  // 114
 	a = a / (a - b + 1);  printf("%d\n", a);  // 1
 	a = a % (b = b - 3);  printf("%d\n", a);  // 0
+#endif
+
+
+#if EX36
+	int a = 10, b;
+	float f = 3.14f;
+
+	a++;
+	f++;
+	printf("%d, %f\n", a, f); // 11, 4.140000
+
+	++a;
+	++f;
+	printf("%d, %f\n", a, f); // 12, 5.140000
+
+	b = ++a;
+	printf("a=%d, b=%d\n", a, b); // 13, 13
+
+	b = a++;
+	printf("a=%d, b=%d\n", a, b); // 14, 13
+
+	b = ++a + b;
+	printf("a=%d, b=%d\n", a, b); // 15, 28
+
+	b = a++ + b;
+	printf("a=%d, b=%d\n", a, b); // 16, 43
+
+#endif
+
+#if EX36m1
+	int a = 1;
+	++a;
+	a++;
+	printf("%d\n", a);
 #endif
 
 }
