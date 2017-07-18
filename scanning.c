@@ -2,6 +2,7 @@
 // #define _CRT_SECURE_NO_WARNINGS // suppress warnings.
 
 #include <stdio.h>
+#include <conio.h>
 
 #define EX18 0
 #define EX19 0
@@ -11,7 +12,9 @@
 #define EX22 0
 #define EX23 0
 #define EX24 0
-#define EX24m1 1
+#define EX24m1 0
+#define EX26 0
+#define EX27 1
 
 
 void main(void){
@@ -107,5 +110,25 @@ void main(void){
 	printf("input order : name, gender, grade, age\n");
 	scanf("%s %c %f %d", name, &gender, &grade, &age);
 	printf("%s / %c / %.1f / %d \n", name, gender, grade, age);
+#endif
+
+#if EX26
+	char scratch[100];
+	gets(scratch);
+	printf("Scratch : %s ", scratch);
+#endif
+
+#if EX27
+	int a;
+	printf("getchar=>Input : ");
+	a = getchar();
+	printf("Your choice is : ");
+	putchar(a);
+	putchar('\n');
+	printf("getch=>Input : ");
+	a = getch();
+	putch('\n');
+	printf("Your choice is : ");
+	putch(a);
 #endif
 }
