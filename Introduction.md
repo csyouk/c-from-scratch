@@ -70,9 +70,9 @@
 - 현대 컴퓨팅 시스템은 UTF-X 방식을 주로 사용한다. 
 
 
-## Data Type
-- Integer Type : char(1B), short int(2B), long int(4B), long long int(8B)
-- Real number Type : float(4B), long double(8B), 
+## Primitive Data Type
+- Integer Type : char(1B), short int(2B), int(4B) long int(4B), long long int(8B)
+- Real number Type : float(4B), double (8B), long double(8B)
 
 ## Data range for integer
 - int(4B) : -2,147,483,648 ~ 2,147,483,647 (10자리 표현)
@@ -188,5 +188,8 @@ a += b -= c *= 2; // ==>
 </pre>
 
 
-<hr />
 
+## Call by address vs Call by value
+- Call by address : 변수의 주소를 전달한다.
+- Call by value : 변수의 값을 저장. 
+<hr />

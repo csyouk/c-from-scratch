@@ -20,3 +20,6 @@
 - Operators
 
 ------------------------
+[Function](https://github.com/csyouk/c-from-scratch/blob/master/Function.md)
+
+- 
