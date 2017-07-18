@@ -2,9 +2,11 @@
 
 #define ENABLE 1
 #define EX29 0
-#define EX30 1
+#define EX30 0
 #define EX31 0
 #define EX32 0
+#define EX33 0
+#define EX34 1
 
 #if ENABLE
 void main(void){
@@ -51,6 +53,26 @@ void main(void){
 	a = b = c = d = 10;
 	printf("%d %d %d %d\n", a, b, c, d);
 #endif
+
+#if EX33
+	int a = 2345; int a4, a3, a2, a1;
+#endif
+
+#if EX34
+	int a = 20, b = 4;
+	//a += 3;            printf("%d\n", a);  // 23
+	//a -= b;            printf("%d\n", a);  // 19
+	//a *= b + 2;        printf("%d\n", a);  // 114
+	//a /= a - b + 1;    printf("%d\n", a);  // 1
+	//a %= b -= 3;       printf("%d\n", a);  // 0
+
+	a = a + 3;            printf("%d\n", a);  // 23
+	a = a - b;            printf("%d\n", a);  // 19
+	a = a * (b + 2);      printf("%d\n", a);  // 114
+	a = a / (a - b + 1);  printf("%d\n", a);  // 1
+	a = a % (b = b - 3);  printf("%d\n", a);  // 0
+#endif
+
 }
 
 #endif

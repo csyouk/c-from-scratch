@@ -114,5 +114,64 @@
 - **putch** : 한 글자를 출력하는 함수.
 
 ## Operators
+**Arithmetic operator**  
+
+- \+ \- & / 
+
+**Modulus operator**  
+
+- % (get remainder)
+
+**Assignment**  
+
+- = 
+
+**Unary operator**  
+
 - **&** : address of
 - **\*** : value of address
+
+example
+
+- +a, -b, sizeof a, &a,
+
+**Binary operator**  
+
+example
+- a+b, a-b
+
+**Compound assignment operator**
+
+- 변수 초기화에 조심해야 한다.
+- 복합연산자는 연산의 횟수를 줄여준다.
+- 복합연산자에서는 우변의 항의 연산이 우선이다.
+- \-=  +=  /=  *= 
+- 연산자는 우선순위가 있다.
+![operator precedence](http://4.bp.blogspot.com/-RTANrXQEtaI/Ty0UX_BdlxI/AAAAAAAAABM/1t8EBkHEARo/s1600/untitled_thumb.png)
+
+example  
+- a /= a - b + 1;
+- a %= b -= 3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
