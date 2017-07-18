@@ -118,6 +118,8 @@
 - **getch** : **엔터 없이 한 글자를 입력 받으며 화면에 입력한 글자는 안보임.** 
 - **putch** : 한 글자를 출력하는 함수.
 
+- **fflush(stdin)** : 이전에 들어가 있던 값들이 전부 저장된 후, 버퍼를 청소한다.
+
 ## Operators
 **Arithmetic operator**  
 
@@ -192,4 +194,13 @@ a += b -= c *= 2; // ==>
 ## Call by address vs Call by value
 - Call by address : 변수의 주소를 전달한다.
 - Call by value : 변수의 값을 저장. 
-<hr />
+
+
+
+## Keyboard input
+- 키보드에서 값이 입력되면, 그 값들이 바로 ram으로 적재되어서 cpu에서 연산 후, 값이 평가되어 담기는게 안니다.
+- 구조를 간단히 그려보자면 다음과 같다.
+- CPU - Keyboard_Buffer - User Input 
+- 이런 다이어그램을 그릴 수 있다. 
+- 키보드의 입력이 끝난 후, 엔터를 치면, 버퍼의 값들이 전부 ram으로 적재된다.
+
