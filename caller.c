@@ -11,6 +11,6 @@ void main(void){
 	result = add(2, 3);
 	printf("%d\n", result);
 
-	printf("%d\n", HHEADER_TEST);
+	printf("%d\n", HHEADER_TEST)
 }
 #endif
