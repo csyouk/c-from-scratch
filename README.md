@@ -22,4 +22,6 @@
 ------------------------
 [Function](https://github.com/csyouk/c-from-scratch/blob/master/Function.md)
 
-- 
+- module
+- function vs procedure
+- signature(return type, argument, function name, )
