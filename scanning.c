@@ -10,7 +10,8 @@
 #define EX21 0
 #define EX22 0
 #define EX23 0
-#define EX24 1
+#define EX24 0
+#define EX24m1 1
 
 
 void main(void){
@@ -96,5 +97,15 @@ void main(void){
 	scanf("%s", &name[0]);
 	printf("Address : %s \n", &address[0]);
 	printf("Name : %s \n", &name[0]);
+#endif
+
+#if EX24m1
+	char name[5], gender;
+	float grade;
+	int age;
+
+	printf("input order : name, gender, grade, age\n");
+	scanf("%s %c %f %d", name, &gender, &grade, &age);
+	printf("%s / %c / %.1f / %d \n", name, gender, grade, age);
 #endif
 }
