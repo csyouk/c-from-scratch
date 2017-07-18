@@ -7,7 +7,10 @@
 #define EX19 0
 #define EX20 0
 #define EX20m1 0
-#define EX21 1
+#define EX21 0
+#define EX22 0
+#define EX23 0
+#define EX24 1
 
 
 void main(void){
@@ -58,5 +61,40 @@ void main(void){
 	fflush(stdin);
 	scanf("%c", &c);
 	printf("your choice is : %c%c%c", a, b, c);
+#endif
+
+#if EX22
+	char a, b, c;
+	printf("input : ");
+	scanf("%c %c", &a, &b);
+	//fflush(stdin);
+	scanf(" %c", &c);
+	printf("your choice is : %c%c%c", a, b, c);
+#endif
+
+#if EX23
+	char a[100];
+
+	printf("input(100글자 미만 문자열 : ");
+	scanf("%s", a); // == scanf("%s", &a[0]); 배열은 자기자신이 주소이다.
+	printf("your choice is %s \n", a);
+
+	scanf("%s", &a[0]);
+	printf("your choice is %s \n", &a[0]);
+
+
+#endif
+
+#if EX24
+	char address[100], name[5];
+	scanf("%s", address);
+	scanf("%s", name);
+	printf("Address : %s \n", address);
+	printf("Name : %s \n", name);
+
+	scanf("%s", &address[0]);
+	scanf("%s", &name[0]);
+	printf("Address : %s \n", &address[0]);
+	printf("Name : %s \n", &name[0]);
 #endif
 }
