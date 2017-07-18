@@ -97,6 +97,21 @@
 ## Convention
 - 다양한 컨벤션이 있으므로, 조직의 규칙을 따른다. 
 
+## IO functions
+
+<code>#include `<stdio.h`></code>
+  
+- **printf** : print string with format
+- **scanf** : scan string with format
+- **gets** : 공백을 포함해서 enter가 눌러질 때까지 입력받아 배열에 저장. 엔터키가 입력되면, 
+            엔터 문자를 \0으로 바꿔서 맨 끝에 추가후 저장. 
+- **getchar** : 입력 후 엔터가 필요. scanf에 %c로 한 글자를 받는 것과 동일. 
+- **putchar** : 한 글자를 출력하는 함수.
+
+<code>#include `<conio.h`></code>
+
+- **getch** : **엔터 없이 한 글자를 입력 받으며 화면에 입력한 글자는 안보임.** 
+- **putch** : 한 글자를 출력하는 함수.
 
 ## Operators
 - **&** : address of
