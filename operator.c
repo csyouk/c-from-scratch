@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define ENABLE 1
+#define OPERATOR_ENABLE 0
 #define EX29 0
 #define EX30 0
 #define EX31 0
@@ -12,7 +12,7 @@
 #define EX37 0
 #define EX38 1
 
-#if ENABLE
+#if OPERATOR_ENABLE
 void main(void){
 #if EX29
 	int a = 0x12345678;
