@@ -8,7 +8,9 @@
 #define EX33 0
 #define EX34 0
 #define EX36 0
-#define EX36m1 1
+#define EX36m1 0
+#define EX37 0
+#define EX38 1
 
 #if ENABLE
 void main(void){
@@ -107,8 +109,35 @@ void main(void){
 	++a;
 	a++;
 	printf("%d\n", a);
+
+	//int b = 2;
+	//++(++b);
+	//printf("%d\n", b);
 #endif
 
+#if EX37
+	char hexa[5];
+	printf("16진수 입력 : ");
+	scanf("%s", hexa);
+
+	printf("0x1000자리=%c, 0x100자리=%c, 0x10자리=%c, 0x1자리=%c\n", hexa[0], hexa[1], hexa[2], hexa[3]);
+#endif
+
+#if EX38
+	char brand[50];
+	char note;
+	float window_size;
+	int price;
+	printf("브랜드 : ");
+	gets(brand);
+	printf("노트 기능 유무 : ");
+	note = getchar();
+	printf("화면크기(인치) : ");
+	scanf("%f", &window_size);
+	printf("가격 : ");
+	scanf("%d", &price);
+	printf("%s, 노트기능 %c, %.1f인치, %d원\n", brand, note, window_size, price);
+#endif
 }
 
 #endif
