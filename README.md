@@ -89,7 +89,7 @@
 
 ## Operators
 - & : address of
-- * : value of address
+- \* : value of address
 
 
 
