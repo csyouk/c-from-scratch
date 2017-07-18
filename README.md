@@ -28,7 +28,7 @@
 - 문자열(string)은 double quotation mark(" ") 로 감싼다.
 - 문자(char)는 single quotation mark(' ')로 감싼다.
 
-## Format directive
+## Format directive (Output)
 - printf 함수를 사용하여 출력할 때 사용하는 문자 포맷 지시자들이다. 
 - %d : decimal value
 - %c : single character
@@ -85,18 +85,11 @@
 ## Convention
 - 다양한 컨벤션이 있으므로, 조직의 규칙을 따른다. 
 
+## Input(scanf, scanf_s)
 
-
-
-
-
-
-
-
-
-
-
-
+## Operators
+- & : address of
+- * : value of address
 
 
 

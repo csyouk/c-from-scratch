@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define ENUM1 1
+#define ENUM1 0
 
 // 자동으로 EAST는 0, WEST는 1 ...
 enum {EAST, WEST, SOUTH, NORTH} mark; 
