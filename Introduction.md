@@ -86,7 +86,7 @@
 - unsigned int : 100u, 100U
 - singed long int : 100l, 100L
 - unsigned long int : 100ul, 100UL
-- long long int : 100ll
+- signed long long int : 100ll
 - unsigned long long int : 100ull, 100ULL
 - char, short는 별도 타입을 의미하는 suffix가 없다. 
 
@@ -94,8 +94,13 @@
 - double : 3.5
 - long double : 3.5l, 3.5L
 
-## Convention
+## Variable Naming Convention
 - 다양한 컨벤션이 있으므로, 조직의 규칙을 따른다. 
+- 하지만 기본적으로 지켜야할 규칙들이 있다.
+- 특수문자 금지.( 언더바 _ 가능, 하지만 가급적 쓰지 말것. )
+- 첫부분에 숫자 금지. 
+- 예약어 사용 금지
+- 명사와 명사 연결시 연산자(+,\-,*,/) 금지.
 
 ## IO functions
 
