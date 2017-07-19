@@ -83,7 +83,7 @@ int age(int age){
 ## Features
 - c 함수의 특징
     1. call by value가 기본. 
-    2. 선언의 끝에는 **;**를 **붙이지 않는다.** (normally semicolon is appended when expression is declared) 
+    2. 선언의 끝에는 **;** 를 **붙이지 않는다.** (normally semicolon is appended when expression is declared) 
 
 - 헤더파일
     - 표준 함수의 원형을 미리 작성해 놓은 것을 헤더파일(Header File)이라고 한다. 
