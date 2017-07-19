@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define CBV_TEST 0
-#define CBV_EX1 1
+#define CBV_EX1 0
 
 int plusone(int);
 

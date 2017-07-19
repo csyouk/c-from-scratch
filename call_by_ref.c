@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define CBR_TEST 1
-#define CBR_EX1 1
+#define CBR_TEST 0
+#define CBR_EX1 0
 
 void plusref(int *a);
 
