@@ -29,7 +29,7 @@ float add(int a, int b){return a + b;}
 float add(float a, float b){return a + b;}
 ```
 
-##How functions managed.
+## How functions managed.
 
 - 먼저 이 주제를 이해하기 위해서는 stack frame이라는 개념을 이해할 필요가 있다.
 - 먼저 그림을 보자. 
@@ -51,7 +51,7 @@ float add(float a, float b){return a + b;}
 - 위 그림은 한 함수가 stack frame에 올라갔을 때(ram) 어떠한 메모리 값들이 들어가는지에 대해 설명한 그림이다.
 
 
-##Terms
+## Terms
 
 - **function** 
     1. 특정 계산을 수행하며 리턴값이 있다. 
@@ -80,7 +80,7 @@ int age(int age){
 }
 ```
 
-##Features
+## Features
 - c 함수의 특징
     1. call by value가 기본. 
     2. 선언의 끝에는 **;**를 **붙이지 않는다.** (normally semicolon is appended when expression is declared) 

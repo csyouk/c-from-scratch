@@ -151,7 +151,7 @@ example
 
 - a+b, a-b
 
-**Compound assignment operator**
+** Compound assignment operator**
 
 - 변수 초기화에 조심.
 - 복합연산자는 연산의 횟수를 줄여준다.
