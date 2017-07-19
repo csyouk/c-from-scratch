@@ -5,13 +5,17 @@
 //void name_disp(void);
 
 // belows three prototypes acts same behavior.
-int my_age(int);
+//int my_age(int);
 //int my_age(int a);
 //int my_age(int my_age);
 
 #if FUNCTION_CLASS
 void main(void){
-	name_disp();
+	//name_disp();
+
+	int result;
+	result = sum(1, 2, 3, 4);
+	printf("%d", result);
 }
 
 void name_disp(void){
@@ -21,4 +25,9 @@ void name_disp(void){
 int my_age(int age){
 	return age;
 }
+
+//int sum(int* inputs)
+//{
+//	return inp
+//}
 #endif

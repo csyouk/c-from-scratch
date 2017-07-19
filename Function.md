@@ -11,14 +11,15 @@
 int add(int a, int b){return a+b;}
 ```
 
-## Signature
-- return type
-- function parameter  
+## Signature 
+- **C는 함수를 구별하는 유일한 식별자가 함수 이름 뿐이다.**
+
+** 참고, java의 경우 다음의 다음의 요소들이 다르면 서로 다른 함수로 처리한다.
 
 아래 네 가지 함수는 **signature**가 다르기 때문에 다른 함수이다.  
 함수의 이름은 같다. 하지만 서로 다른 **return type**과 **argument**를 가지기 때문에 서로 다른 함수이다.
 
-```cpp
+```java
 int add(int a, int b){return a + b;}
 
 int add(float a, float b){return a + b;}
