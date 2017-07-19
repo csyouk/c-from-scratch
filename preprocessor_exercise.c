@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define PREPROCESSOR_TEST 1
+#define PREPROCESSOR_TEST 0
 
 #if PREPROCESSOR_TEST
 
@@ -10,8 +10,8 @@
 #define  message(arg1, arg2)  \
    printf(#arg1 " and " #arg2 " // argument passed! \n")
 
-#define tokenpaster(n) \
-	printf ("token" #n " = %d", token##n)
+#define tokenpaster(arg) \
+	printf ("token" #arg " = %d", token##arg)
 
 int main(void) {
 	message("csyouk", "tommey");
