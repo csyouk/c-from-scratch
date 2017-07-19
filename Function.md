@@ -6,12 +6,10 @@
 - return
 
 - declaration > invoke(=call) 
-<pre>
-<code>
+```cpp
 // 이 경우 return의 결과로 식(expression)이 반환된다.
 int add(int a, int b){return a+b;}
-</code>
-</pre>
+```
 
 ## Signature
 - return type
@@ -20,8 +18,7 @@ int add(int a, int b){return a+b;}
 아래 네 가지 함수는 **signature**가 다르기 때문에 다른 함수이다.  
 함수의 이름은 같다. 하지만 서로 다른 **return type**과 **argument**를 가지기 때문에 서로 다른 함수이다.
 
-<pre>
-<code>
+```cpp
 int add(int a, int b){return a + b;}
 
 int add(float a, float b){return a + b;}
@@ -29,8 +26,7 @@ int add(float a, float b){return a + b;}
 float add(int a, int b){return a + b;}
 
 float add(float a, float b){return a + b;}
-</code>
-</pre>
+```
 
 ##How functions managed.
 
@@ -53,6 +49,7 @@ float add(float a, float b){return a + b;}
 
 - 위 그림은 한 함수가 stack frame에 올라갔을 때(ram) 어떠한 메모리 값들이 들어가는지에 대해 설명한 그림이다.
 
+
 ##Terms
 
 - **function** 
@@ -67,6 +64,7 @@ float add(float a, float b){return a + b;}
     - main 함수 이전에 함수의 원형을 선언해놓는다.
 
 *참고
+
 ```cpp
 // 원형 선언시에 다음 세 문장은 정확히 같은 역할을 한다.
 
@@ -80,6 +78,7 @@ int age(int age){
     return age;
 }
 ```
+
 ##Features
 - c 함수의 특징
     1. call by value가 기본. 
