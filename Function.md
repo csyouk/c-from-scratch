@@ -67,9 +67,9 @@ float add(float a, float b){return a + b;}
     - main 함수 이전에 함수의 원형을 선언해놓는다.
 
 *참고
-<pre>
-<code>
+```cpp
 // 원형 선언시에 다음 세 문장은 정확히 같은 역할을 한다.
+
 int age(int);
 int age(int a);
 int age(int age); // 좋지 않은 네이밍. 
@@ -79,9 +79,7 @@ int age(int age); // 좋지 않은 네이밍.
 int age(int age){
     return age;
 }
-</code>
-</pre>
-
+```
 ##Features
 - c 함수의 특징
     1. call by value가 기본. 
