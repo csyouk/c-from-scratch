@@ -1,5 +1,8 @@
 # C From Scratch
 
+This document follows C90.  
+Recommended compiler : **gcc** compiler
+
 ------------------------
 [Git configuration](https://github.com/csyouk/c-from-scratch/blob/master/How-To-Manage-Git.md)
 
@@ -25,3 +28,8 @@
 - module
 - function vs procedure
 - signature(return type, argument, function name, )
+
+------------------------
+[Header](https://github.com/csyouk/c-from-scratch/blob/master/Header.md)
+
+- 
