@@ -37,7 +37,8 @@
 
 - **\\**  : Macro continuation operator.
 
-```cpp #define  print_msg(a, b)  \
+```cpp 
+#define  print_msg(a, b)  \
    printf("%s and %s \n", a, b)
 ```
 
@@ -45,8 +46,10 @@
 - 매크로로 선언된 문장에서 \# 연산자가 쓰이면, \# 연산자는 매크로 매개변수(parameter)로 채워진다. 
 parameter는 문자열 상수로 전환된다.  
 
-``` cpp #include <stdio.h>
-\ #define  message(arg1, arg2)  \
+``` cpp 
+#include <stdio.h>
+
+#define  message(arg1, arg2)  \
    printf(#arg1 " and " #arg2 " // argument passed! \n")
 
 int main(void) {
@@ -59,7 +62,8 @@ int main(void) {
 - \#\# : 토큰 복사 연산자(token-pasting operator)
 매크로 정의부에 쓰인 \#\# 연산자는 2개의 인자를 붙여서 하나의 토큰 처럼 쓰이게 한다.
 
-```cpp #include <stdio.h>
+```cpp 
+#include <stdio.h>
 
 #define tokenpaster(n) printf ("token" #n " = %d", token##n)
 
@@ -69,3 +73,4 @@ int main(void) {
    return 0;
 }
 ```
+
