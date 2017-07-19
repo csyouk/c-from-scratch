@@ -2,8 +2,8 @@
 #include ".\aaa\level.h"
 #include "c:\Users\student\Documents\Visual Studio 2013\Projects\c-exercise\c-exercise\aaa\level.h"
 
-#define HEADER_LEVEL_TEST 1
-#define HHEADER_LEVEL_TEST 1
+#define HEADER_LEVEL_TEST 0
+#define HHEADER_LEVEL_TEST 0
 
 #if HEADER_LEVEL_TEST
 
