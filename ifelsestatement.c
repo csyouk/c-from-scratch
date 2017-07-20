@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define IFELSE_STATEMENT 1
+#define IFELSE_STATEMENT 0
 #define IFEL_EX1 0
 #define IFEL_EX4 0
 #define IFEL_EX7 0
@@ -18,6 +18,13 @@
 #define IFEL_EX23 0
 #define IFEL_EX24 0
 #define IFEL_EX25 0
+#define IFEL_EX25m1 0
+#define IFEL_EX26 0
+#define IFEL_EX27 0
+#define IFEL_EX28 0
+#define IFEL_EX29 0
+#define IFEL_EX32 1
+#define IFEL_EX33 1
 
 int compare(int);
 int ifeladd(int a, int b);
@@ -25,6 +32,10 @@ int ifeladd(int a, int b);
 int mul_3_5(int n);
 int range4_10(int n);
 int isalphabet(char c);
+int isinrange_f_z(int c);
+int conversion(char c);
+int nearest(float);
+
 
 #if IFELSE_STATEMENT
 void main(void)
@@ -158,6 +169,124 @@ void main(void)
 	printf("a = %d, b = %d\n", a, b);
 #endif
 
+#if IFEL_EX25m1
+	int a = 3;
+	compare(3);
+	//(3)compare;  // error
+	a++;
+	++a;
+	++a, a++, ++a, ++a, printf("%d\n", a), a++;
+#endif
+
+#if IFEL_EX26
+	//int c;
+	//scanf("%c", &c);
+	//printf("ex26 : %d\n", isinrange_f_z(c));
+	printf("ex26 : %d\n", isinrange_f_z('f'));
+	printf("ex26 : %d\n", isinrange_f_z('g'));
+	printf("ex26 : %d\n", isinrange_f_z('e'));
+#endif
+
+#if IFEL_EX27
+	//int d;
+	//scanf("%c", &d);
+	//printf("ex27 : %c\n", conversion(d));
+	printf("ex27 : %c\n", conversion('a'));
+	printf("ex27 : %c\n", conversion('A'));
+#endif
+
+#if IFEL_EX28
+	//int e;
+	//scanf("%c", &e);
+	//printf("ex28 : %c\n", blind_lew(e));
+	printf("ex28 : %c\n", blind_lew('l'));
+	printf("ex28 : %c\n", blind_lew('a'));
+#endif
+
+#if IFEL_EX29
+	//float f;
+	//scanf("%f", &f);
+	printf("ex29 : %d\n", nearest(3.46));
+	printf("ex29 : %d\n", nearest(4.1));
+	printf("ex29 : %d\n", nearest(-3.4));
+	printf("ex29 : %d\n", nearest(-3.64));
+#endif
+
+#if IFEL_EX32
+	int lucky = 1;
+	switch (lucky)
+	{
+	case 6:
+		printf("만년필\n");
+		break;
+	case 7:
+		printf("현금 100만원\n");
+		break;
+	case 66:
+		printf("라이언 인형\n");
+		break;
+	default:
+		printf("꽝\n");
+		break;
+	}
+#endif
+
+#if IFEL_EX33
+
+	int money = 300;
+	switch (money)
+	{
+	case 300:
+		printf("바닷가재 1마리\n");
+	case 200:
+		printf("고등어 1마리\n");
+	case 100:
+		printf("꽁치 1마리\n");
+		break;
+	default:
+		printf("안팔아\n");
+		break;
+	}
+#endif
+}
+
+int nearest(float i)
+{
+	if (i > 0.0f) return i + 0.5f;
+	if (i < 0.0f) return i - 0.5f;
+	return 0;
+}
+
+int blind_lew(char c)
+{
+	if (c == 'L' || c == 'E' || c == 'W')
+	{
+		return '*';
+	}
+	return c;
+}
+
+
+int conversion(char c)
+{
+	if ('A' - 1 < c && c < 'Z' + 1)
+	{
+		return c - 'A' + 'a';
+	}
+	if ('a' - 1 < c && c < 'z' + 1)
+	{
+		return c - 'a' + 'A';
+	}
+	return 0;
+}
+
+int isinrange_f_z(int c)
+{
+	if ('f' - 1 < c && c < 'z' + 1)
+	{
+		return 1;
+	}
+	return 0;
 }
 
 int compare(int num)
