@@ -1,4 +1,4 @@
-#include <stdio.h>
+//#include <stdio.h>
 
 //void print_gugu(int s, int e);
 //
@@ -52,7 +52,7 @@
 
 
 //
-int round_f(float num);
+/*int round_f(float num);
 int floor(float);
 int gauss(float);
 void analyze(float values[3]);
@@ -119,4 +119,58 @@ int gauss(float num)
 	result = num - 1.0f;
 	return result;
 
-}
+}*/
+
+//void main()
+//{
+//	int a = 1;
+//	printf("%c\n", a + 48);
+//}
+
+
+//#include <stdio.h>
+//
+//void check_cross(int a, int b, int c, int d);
+//
+//int main(void)
+//{
+//	// 여기서부터 작성
+//
+//	int fs, fe, ss, se;
+//
+//	scanf("%d%d", &fe, &fs);
+//	scanf("%d%d", &ss, &se);
+//
+//	check_cross(fs, fe, ss, se);
+//
+//	return 0;
+//}
+//
+//void check_cross(int fs, int fe, int ss, int se)
+//{
+//
+//	if (fs > fe)
+//	{
+//		int temp = fs;
+//		fs = fe;
+//		fe = temp;
+//	}
+//
+//	if (ss > se)
+//	{
+//		int temp = ss;
+//		ss = se;
+//		se = temp;
+//	}
+//
+////	printf("%d %d %d %d", fs, fe, ss, se);
+//
+//	if (((fs < ss) && (ss < fe)) || ((fs < se) && (se < fe)) )
+//	{
+//		printf("cross");
+//	}
+//	else
+//	{
+//		printf("not cross");
+//	}
+//}

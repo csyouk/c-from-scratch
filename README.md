@@ -37,3 +37,15 @@ Recommended compiler : **gcc** compiler
 - ```#define```
 - Macro function
 - extra.
+
+
+------------------------
+[Statement](https://github.com/csyouk/c-from-scratch/blob/master/Statement.md)
+
+- Declaration ( declare variable, function, macro )
+- Expression 
+- Blank ( NULL, ;)
+- Judgement ( if, else, else if, switch~case )
+- Compound ( {...} )
+- Loop ( for, while, do~while)
+- Branch ( return, break, continue, goto )
