@@ -205,26 +205,26 @@
 //	}
 //}
 
-#include <stdio.h>
 
-void main()
-{
-//	int a = 0, b = 3, c;
-	//c = !(a == b); printf("%d", c);
-	//c = a = b; printf("%d", c);
-//	c = !a++; printf("%d", c);
-//	c = (b%2 == 0); printf("%d", c);
-	//c = !a++;  printf("a b c %d %d %d", a, b, c);
-
-
-	//int a, b, c;
-	//a = (b = 0, c = b++, c + 1);  printf("%d %d %d", a,b,c);
-	//a = b = 0, c = b++, c + 1;  printf("%d %d %d", a,b,c);
-
-	int a = 3, b = 0;
-//	if ((a < 5) || (b = 3)) b++; printf("%d %d", a, b);
-	//if ((a > 5) || (b = 3)) b++; printf("%d %d", a, b);
-	//if (a==3 && b = 3) b++; printf("%d %d", a, b);
-	if ((a==5) && (b=3)) b++; printf("%d %d", a, b);
-
-}
+//#include <stdio.h>
+//void main()
+//{
+////	int a = 0, b = 3, c;
+//	//c = !(a == b); printf("%d", c);
+//	//c = a = b; printf("%d", c);
+////	c = !a++; printf("%d", c);
+////	c = (b%2 == 0); printf("%d", c);
+//	//c = !a++;  printf("a b c %d %d %d", a, b, c);
+//
+//
+//	//int a, b, c;
+//	//a = (b = 0, c = b++, c + 1);  printf("%d %d %d", a,b,c);
+//	//a = b = 0, c = b++, c + 1;  printf("%d %d %d", a,b,c);
+//
+//	int a = 3, b = 0;
+////	if ((a < 5) || (b = 3)) b++; printf("%d %d", a, b);
+//	//if ((a > 5) || (b = 3)) b++; printf("%d %d", a, b);
+//	//if (a==3 && b = 3) b++; printf("%d %d", a, b);
+//	if ((a==5) && (b=3)) b++; printf("%d %d", a, b);
+//
+//}
