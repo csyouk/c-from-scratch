@@ -43,9 +43,15 @@ Recommended compiler : **gcc** compiler
 [Statement](https://github.com/csyouk/c-from-scratch/blob/master/Statement.md)
 
 - Declaration ( declare variable, function, macro )
-- Expression 
+- Expression ( assign , calculate )
 - Blank ( NULL, ;)
 - Judgement ( if, else, else if, switch~case )
 - Compound ( {...} )
 - Loop ( for, while, do~while)
 - Branch ( return, break, continue, goto )
+
+------------------------
+[Operators](https://github.com/csyouk/c-from-scratch/blob/master/Operators.md)
+
+- Operator precedence
+- Kinds of operators.

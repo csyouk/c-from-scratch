@@ -23,8 +23,9 @@
 #define IFEL_EX27 0
 #define IFEL_EX28 0
 #define IFEL_EX29 0
-#define IFEL_EX32 1
-#define IFEL_EX33 1
+#define IFEL_EX32 0
+#define IFEL_EX33 0
+#define IFEL_EX34 1
 
 int compare(int);
 int ifeladd(int a, int b);
@@ -35,6 +36,7 @@ int isalphabet(char c);
 int isinrange_f_z(int c);
 int conversion(char c);
 int nearest(float);
+char grade(int);
 
 
 #if IFELSE_STATEMENT
@@ -113,16 +115,16 @@ void main(void)
 
 #if IFEL_EX15
 	int a, b, c;
-	//printf("EX15 : %d\n", ifeladd(3, 4, 5));
-	//printf("EX15 : %d\n", ifeladd(3, (4, 5)));
+	printf("EX15 : %d\n", ifeladd(3, 4, 5));
+	printf("EX15 : %d\n", ifeladd(3, (4, 5)));
 
-	//a = 3, 4;
-	//printf("EX15 : %d\n", ifeladd(a, 10));
-	//a = (50, 100);
-	//printf("EX15 : %d\n", ifeladd(a, 200));
+	a = 3, 4;
+	printf("EX15 : %d\n", ifeladd(a, 10));
+	a = (50, 100);
+	printf("EX15 : %d\n", ifeladd(a, 200));
 
-	//a = (b = 3, c = b + 4, c + 1);
-	//printf("a b c : %d %d %d \n", a, b, c);
+	a = (b = 3, c = b + 4, c + 1);
+	printf("a b c : %d %d %d \n", a, b, c);
 	a = b = 3, c = b + 4, c + 1;
 	printf("a b c: %d %d %d\n", a, b, c);
 #endif
@@ -141,9 +143,9 @@ void main(void)
 #endif
 
 #if IFEL_EX19
-	//int a = 4, b = 0;
-	//if (a == 5 && b = 3) b++;
-	//printf("ex19 : %d\n", b);
+	int a = 4, b = 0;
+	if (a == 5 && b = 3) b++;
+	printf("ex19 : %d\n", b);
 #endif
 
 #if IFEL_EX21
@@ -248,6 +250,44 @@ void main(void)
 		break;
 	}
 #endif
+
+
+#if IFEL_EX34
+
+	printf("your grade is : %c\n", grade(99));
+	printf("your grade is : %c\n", grade(90));
+	printf("your grade is : %c\n", grade(89));
+	printf("your grade is : %c\n", grade(79));
+	printf("your grade is : %c\n", grade(71));
+	printf("your grade is : %c\n", grade(70));
+	printf("your grade is : %c\n", grade(69));
+	printf("your grade is : %c\n", grade(55));
+	printf("your grade is : %c\n", grade(44));
+	printf("your grade is : %c\n", grade(101));
+	printf("your grade is : %c\n", grade(100));
+	printf("your grade is : %c\n", grade(-1));
+#endif
+
+
+}
+
+
+char grade(int score)
+{
+	if (score > 100 || score < 0) return 'X';
+	switch ((score - 1) / 10)
+	{
+	case 9:
+		return'A';
+	case 8:
+		return 'B';
+	case 7:
+		return 'C';
+	case 6:
+		return 'D';
+	default:
+		return 'F';
+	}
 }
 
 int nearest(float i)
