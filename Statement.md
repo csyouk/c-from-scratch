@@ -62,6 +62,57 @@ switch(a)
 - 
 
 ## Loop ( for, while, do~while)
+- for loop 
+
+```cpp
+
+    // process order 1 > 2 > 3 > 4
+    //                   |       |
+    //                   ㄴ------  
+    // 
+
+
+    for(intialization expression(1) ; conditional expression(2); post expression(3))
+    {
+        compound statement(4)
+    }
+
+```
+
+- 주목해야 할 점은 1 ~ 4의 위치에 '식'이 들어간다는 점이다.
+- **식(expression)이 들어가기 때문에 다음과 같은 식들도 가능하다.
+
+```cpp
+
+	for (int i = 'A'; i < 'K' + 1; i++)
+	{
+		printf("%c ", i);
+	}
+	
+	printf("\n");
+	
+	for (int i = 'D'; i < 'X'+1; i += 2)
+	{
+		printf("%c ", i);
+	}
+
+	printf("\n");
+
+	for (float f = 0.1; f < 3.14f; f += 0.1f)
+	{
+		printf("%f\n", f);
+	}
+
+	printf("\n");
+
+	for (char c = 'A'; c < 'Z' + 1; c++)
+	{
+		printf("%c ", c);
+	}
+
+```
+
+
 ## Branch ( return, break, continue, goto )
 - 분기문을 if, else로 착각하기 쉽다. 
 - return이 분기문으로 취급되는 이유는?
