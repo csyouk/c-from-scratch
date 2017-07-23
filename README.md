@@ -23,7 +23,7 @@ Recommended compiler : **gcc** compiler
 - Operators
 
 -------------------------
-[Represent variety of numbers using bits](https://github.com/csyouk/c-from-scratch/blob/master/Introduction.md)
+[Represent variety of numbers using bits](https://github.com/csyouk/c-from-scratch/blob/master/Represent_NeNumber_FloatDouble.md)
 - Represent negative integer using "Signed Magnitude".
 - Represent negative integer using "1's complement".
 - Represent negative integer using "2's complement".
