@@ -22,6 +22,15 @@ Recommended compiler : **gcc** compiler
 - Suffix
 - Operators
 
+-------------------------
+[Represent variety of numbers using bits](https://github.com/csyouk/c-from-scratch/blob/master/Introduction.md)
+- Represent negative integer using "Signed Magnitude".
+- Represent negative integer using "1's complement".
+- Represent negative integer using "2's complement".
+- How to represent float number.
+- How to represent double number.
+
+
 ------------------------
 [Function](https://github.com/csyouk/c-from-scratch/blob/master/Function.md)
 
