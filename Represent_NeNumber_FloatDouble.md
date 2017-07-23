@@ -1,5 +1,3 @@
-<script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 # How to represent variety of numbers in a limited bits.
 - 기본 적으로 아래 방법은 10진수 <====> 2진수로 바꿀 때의 경우를 생각한다.
 
